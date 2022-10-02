@@ -12,7 +12,7 @@ for i in range(1,4):
         print("Your guess is greater than the number")
     else:
         print("Your guess is less than the number")
-if flag==false:
+if flag==False:
     print("Sorry!Better luck next time!")
 else:
     print("Well Done")
