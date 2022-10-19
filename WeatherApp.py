@@ -3,35 +3,21 @@ import requests
 import json
 from datetime import datetime
 root =Tk()
-root.geometry("400x400") #size of the window by default
+root.geometry("400x400") #size of the window 
 root.resizable(0,0) #to make the window size fixed
-#title of our window
 root.title("Weather App - AskPython.com")
 city_value = StringVar()
- 
 def showWeather():
- 
 #Enter you api key, copies from the OpenWeatherMap dashboard
     api_key = "eda2b2s6d#sd65f4de7c4b8"  #sample API
- 
-    # Get city name from user from the input field (later in the code)
     city_name=city_value.get()
- 
-    # API url
     weather_url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city_name + '&appid='+api_key
- 
-    # Get the response from fetched url
-    response = requests.get(weather_url)
- 
-    # changing response from json to python readable 
+     # Get the response from fetched url
+    response = requests.get(weather_url) 
     weather_info = response.json()
- 
- 
     tfield.delete("1.0", "end")   #to clear the text field for every new output
  
 #as per API documentation, if the cod is 200, it means that weather data was successfully fetched
- 
- 
     if weather_info['cod'] == 200:
         kelvin = 273 # value of kelvin
  
