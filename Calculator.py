@@ -37,55 +37,29 @@ ans = a / t
 return [ans,t]
 # main...
 while True:
-
 list = []
-
 print(" My first python program!")
-
 print(" Simple Calculator in python by Malik Umer Farooq")
-
 print(" Enter 'a' for addition")
-
 print(" Enter 's' for substraction")
-
 print(" Enter 'm' for multiplication")
-
 print(" Enter 'v' for average")
-
 print(" Enter 'q' for quit")
-
 c = input(" ")
-
 if c != 'q':
-
 if c == 'a':
-
 list = addition()
-
 print("Ans = ", list[0], " total inputs ",list[1])
-
 elif c == 's':
-
 list = subtraction()
-
 print("Ans = ", list[0], " total inputs ",list[1])
-
 elif c == 'm':
-
 list = multiplication()
-
 print("Ans = ", list[0], " total inputs ",list[1])
-
 elif c == 'v':
-
 list = average()
-
 print("Ans = ", list[0], " total inputs ",list[1])
-
 else:
-
 print ("Sorry, invilid character")
-
 else:
-
 break
